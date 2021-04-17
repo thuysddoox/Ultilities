@@ -94,7 +94,7 @@
         }
         
         .app__logo ::after {
-            content: url('./assets/images/cat.png');
+            content: url(../images/cat.png);
             position: absolute;
             left: 50%;
             transform: translate(-50%, 0%);
@@ -837,7 +837,7 @@
             position: absolute;
             top: 25%;
             left: -20px;
-            content: url('./assets/images/check-mark.png');
+            content: url(../images/check-mark.png);
             width: 50%;
         }
         
@@ -880,7 +880,7 @@
         
         .note__item.actived .note__item-heading::after,
         .note__item:hover .note__item-heading::after {
-            content: url('./assets/images/check.png');
+            content: url(../images/check.png);
         }
         
         .note__item-heading {
@@ -893,7 +893,7 @@
         }
         
         .note__item-heading::after {
-            content: url('./assets/images/complain.png');
+            content: url(../images/complain.png);
             position: absolute;
             top: 0%;
             left: 100%;
