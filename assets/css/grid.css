@@ -1,0 +1,39 @@
+.grid {
+    width: 100%;
+    display: block;
+}
+
+.grid.wide {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -4px;
+}
+
+.col {
+    padding: 0 4px;
+}
+
+
+/*NO GUTTER*/
+
+.row.no_gutter {
+    margin: 0;
+}
+
+.row.no_gutter .col {
+    padding: 0
+}
+
+@media screen and(min-width: 576px) {
+    .wide {}
+}
+
+@media screen and(min-width:1024px) {}
+
+@media screen and (min-width:1200px) {}

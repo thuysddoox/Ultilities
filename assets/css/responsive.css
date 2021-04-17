@@ -1,0 +1,46 @@
+@media screen and(max-width:350px) {
+    .clock__country-item,
+    .clock__country-list {
+        margin: 0px;
+        justify-content: center;
+    }
+    .alarm__time-day-item {
+        padding: 1px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .block {
+        width: 95%;
+    }
+    .form__login label {
+        font-size: 1.7rem;
+    }
+    .form__login input::placeholder,
+    .form__login input {
+        font-size: 1.4rem;
+    }
+    .clock__country-list {
+        margin: 12px;
+    }
+    .clock__country-item {
+        margin: 16px 40px;
+    }
+}
+
+@media screen and (min-width:561px) and (max-width:768px) {
+    .block {
+        width: 80%;
+    }
+    .form__login input::placeholder,
+    .form__login input {
+        font-size: 1.4rem;
+    }
+    .form__login label {
+        font-size: 1.7rem;
+    }
+    .clock__country-item {
+        margin: 16px 32px;
+    }
+}
