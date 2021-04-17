@@ -4,6 +4,9 @@
         margin: 0px;
         justify-content: center;
     }
+    .app {
+        height: 100vh;
+    }
     .alarm__time-day-item {
         padding: 1px;
         display: inline-block;
