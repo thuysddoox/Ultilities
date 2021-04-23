@@ -117,7 +117,13 @@
                         <div class="alarm__list">
                             <div class="alarm__item">
                                 <div class="alarm__item-info">
-                                    <h2 class="alarm__item-time">7:30</h2>
+                                    <h2 class="alarm__item-time">
+                                        <span>07:30</span>
+                                        <div class="btn-group-item btn-group-alarm">
+                                            <button class="btn-edit">Edit</button>
+                                            <button class="btn-del">Delete</button>
+                                        </div>
+                                    </h2>
                                     <div class="alarm__time-note">.......</div>
                                     <ul class="alarm__time-day-list">
                                         <li class="alarm__time-day-item day--actived">Mon</li>
@@ -132,10 +138,17 @@
                                 <div class="alarm__item-btn">
                                     <div class="alarm__item-btn-node"></div>
                                 </div>
+
                             </div>
                             <div class="alarm__item alarm--actived">
                                 <div class="alarm__item-info">
-                                    <h2 class="alarm__item-time">5:30</h2>
+                                    <h2 class="alarm__item-time">
+                                        <span>05:30</span>
+                                        <div class="btn-group-item  btn-group-alarm">
+                                            <button class="btn-edit">Edit</button>
+                                            <button class="btn-del">Delete</button>
+                                        </div>
+                                    </h2>
                                     <div class="alarm__time-note">Dậy đọc sách nghe tiếng anh, học từ mới, ăn sáng đi học hai kíp trưa về ăn cơm đi ngủ chiều dậy đi học về tắm giặt ăn cơm đi ngủ</div>
                                     <ul class="alarm__time-day-list">
                                         <li class="alarm__time-day-item ">Mon</li>
@@ -153,7 +166,13 @@
                             </div>
                             <div class="alarm__item">
                                 <div class="alarm__item-info">
-                                    <h2 class="alarm__item-time">14:30</h2>
+                                    <h2 class="alarm__item-time">
+                                        <span>14:30</span>
+                                        <div class="btn-group-item  btn-group-alarm">
+                                            <button class="btn-edit">Edit</button>
+                                            <button class="btn-del">Delete</button>
+                                        </div>
+                                    </h2>
                                     <div class="alarm__time-note">.......</div>
                                     <ul class="alarm__time-day-list">
                                         <li class="alarm__time-day-item ">Mon</li>
@@ -186,28 +205,28 @@
                             <textarea name="note" id="alarm__note" placeholder="Note..."></textarea>
                             <div class="form__day-list">
                                 <div class="form__day-item">
-                                    <label for="Monday">Monday</label><input type="checkbox" name="Monday" id="Monday">
+                                    <label for="Monday">Monday</label><input class="dayWeek" type="checkbox" value="Monday" id="Monday">
                                 </div>
                                 <div class="form__day-item">
-                                    <label for="Tuesday">Tuesday</label><input type="checkbox" name="Tuesday" id="Tuesday">
+                                    <label for="Tuesday">Tuesday</label><input class="dayWeek" type="checkbox" value="Tuesday" id="Tuesday">
                                 </div>
                                 <div class="form__day-item">
-                                    <label for="Wednesday">Wednesday</label><input type="checkbox" name="Wednesday" id="Wednesday">
+                                    <label for="Wednesday">Wednesday</label><input class="dayWeek" type="checkbox" value="Wednesday" id="Wednesday">
                                 </div>
                                 <div class="form__day-item">
-                                    <label for="Thursday">Thursday</label><input type="checkbox" name="Thursday" id="Thursday">
+                                    <label for="Thursday">Thursday</label><input class="dayWeek" type="checkbox" value="Thursday" id="Thursday">
                                 </div>
                                 <div class="form__day-item">
-                                    <label for="Friday">Friday</label><input type="checkbox" name="Friday" id="Friday">
+                                    <label for="Friday">Friday</label><input class="dayWeek" type="checkbox" value="Friday" id="Friday">
                                 </div>
                                 <div class="form__day-item">
-                                    <label for="Saturday">Saturday</label><input type="checkbox" name="Saturday" id="Saturday">
+                                    <label for="Saturday">Saturday</label><input class="dayWeek" type="checkbox" value="Saturday" id="Saturday">
                                 </div>
                                 <div class="form__day-item">
-                                    <label for="Sunday">Sunday</label><input type="checkbox" name="Sunday" id="Sunday">
+                                    <label for="Sunday">Sunday</label><input class="dayWeek" type="checkbox" value="Sunday" id="Sunday">
                                 </div>
                                 <div class="form__day-item">
-                                    <label for="all">Everyday</label><input type="checkbox" name="alldays" id="all">
+                                    <label for="all">Everyday</label><input class="dayWeek" type="checkbox" value="alldays" id="all">
                                 </div>
                             </div>
                             <div class="alarm__ring">
@@ -253,6 +272,10 @@
                                     <div class="note__item-date">06/04/2022</div>
                                     <div class="note__item-text">Học nghe nói đọc viết ngữ pháp từ mới </div>
                                 </div>
+                                <div class="btn-group-item btn-group-note">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-del">Delete</button>
+                                </div>
                             </div>
                             <div class="note__item">
                                 <h2 class="note__item-heading">Công nghệ phần mềm</h2>
@@ -260,12 +283,20 @@
                                     <div class="note__item-date">07/04/2022</div>
                                     <div class="note__item-text">Nộp bài tập lớn nhập môn công nghệ phần mềm pha lấy yêu cầu</div>
                                 </div>
+                                <div class="btn-group-item btn-group-note">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-del">Delete</button>
+                                </div>
                             </div>
                             <div class="note__item">
                                 <h2 class="note__item-heading">Đóng tiền học phí</h2>
                                 <div class="note__item-content">
                                     <div class="note__item-date">15/04/2022</div>
                                     <div class="note__item-text">Đóng tiền học phí 7680000vnđ</div>
+                                </div>
+                                <div class="btn-group-item btn-group-note">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-del">Delete</button>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +320,7 @@
 </body>
 <!--Link js-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script src="./assets/js/app.js"></script>
+<script src="./assets/js/method.js"></script>
+<!-- <script src="./assets/js/api.js"></script> -->
 
 </html>

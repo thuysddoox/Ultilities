@@ -1,21 +1,26 @@
-@media screen and(max-width:350px) {
-    .clock__country-item,
-    .clock__country-list {
-        margin: 0px;
-        justify-content: center;
+@media screen and (min-width:561px) and (max-width:768px) {
+    .block {
+        width: 80%;
+        transform: translate(-50%, 10%);
     }
-    .app {
-        height: 100vh;
+    .form__login input::placeholder,
+    .form__login input {
+        font-size: 1.4rem;
     }
-    .alarm__time-day-item {
-        padding: 1px;
-        display: inline-block;
+    .form__login label {
+        font-size: 1.7rem;
+    }
+    .clock__country-item {
+        margin: 16px 32px;
     }
 }
 
 @media screen and (max-width:560px) {
     .block {
         width: 95%;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
     .form__login label {
         font-size: 1.7rem;
@@ -30,20 +35,42 @@
     .clock__country-item {
         margin: 16px 40px;
     }
-}
-
-@media screen and (min-width:561px) and (max-width:768px) {
-    .block {
-        width: 80%;
+    .note__item {
+        padding: 18px 8px;
     }
-    .form__login input::placeholder,
-    .form__login input {
-        font-size: 1.4rem;
-    }
-    .form__login label {
+    .note__item-heading {
         font-size: 1.7rem;
     }
-    .clock__country-item {
-        margin: 16px 32px;
+    .note__item-heading::after {
+        top: 0%;
+        left: 100%;
+    }
+    .alarm__form-title {
+        font-size: 1.4rem;
     }
 }
+
+
+/* 
+@media screen and(max-width:350px) {
+    .clock__country-item,
+    .clock__country-list {
+        margin: 0px;
+        justify-content: center;
+    }
+    .alarm__time-day-item {
+        padding: 1px;
+        display: inline-block;
+    }
+    .form__note {
+        padding: 0;
+        text-align: justify;
+    }
+    .note__item-heading {
+        font-size: 1.8rem;
+    }
+    .note__item-heading::after {
+        top: 0%;
+        left: 80%;
+    }
+} */

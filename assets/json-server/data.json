@@ -1,0 +1,14 @@
+{
+    "alarm": [{
+        "time": "",
+        "note": "",
+        "status": "",
+        "day": [2, 3, 4],
+        "ringUrl": ""
+    }],
+    "note": [{
+        "title": "",
+        "time": "",
+        "content": ""
+    }]
+}
