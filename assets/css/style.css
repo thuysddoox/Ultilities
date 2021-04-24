@@ -342,7 +342,7 @@
             overflow-y: scroll;
             /* height: 70vh; */
             max-height: 500px;
-            min-height: 410px;
+            min-height: 500px;
             padding-bottom: 32px;
             /* display: none; */
         }
