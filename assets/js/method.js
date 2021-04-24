@@ -152,6 +152,12 @@ function renderNote(callback) {
     document.querySelector('.note__menu-count').innerText = document.getElementsByClassName('note__item').length + " ghi chú";
     document.getElementById('note__title').value = '';
     document.getElementById('note__content').value = '';
+    document.querySelectorAll('.note__item .btn-del').forEach(deleteNote);
+    document.querySelectorAll('.note__item .btn-edit').forEach(showInforNote);
+    showBtnNote();
+
+
+
 }
 
 // create new alarm
@@ -253,6 +259,9 @@ function renderAlarm(alarm) {
     // activedAlarm();
     activedAlarm();
     backAlarm();
+    document.querySelectorAll('.alarm__item-info .btn-del').forEach(deleteAlarm);
+    document.querySelectorAll('.alarm__item-info .btn-edit').forEach(showInforAlrm);
+    showBtnAlr();
 }
 
 function backAlarm() {
@@ -271,7 +280,7 @@ function backAlarm() {
 
 // EDIT ALARM
 showBtnAlr();
-showBtnNote()
+showBtnNote();
 
 function showBtnAlr() {
     document.querySelector('.alarm__edit-btn').onclick = function() {
