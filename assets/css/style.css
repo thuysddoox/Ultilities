@@ -607,6 +607,16 @@
             margin-left: 32px;
         }
         
+        .alarm--done,
+        .note--done {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-left: 8px;
+            color: #3fc79c;
+        }
+        
         .alarm__btn i {
             background-color: crimson;
             display: inline-block;

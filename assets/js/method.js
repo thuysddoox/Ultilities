@@ -281,6 +281,8 @@ function backAlarm() {
 // EDIT ALARM
 showBtnAlr();
 showBtnNote();
+document.querySelector('.alarm--done').onclick = showBtnAlr();
+document.querySelector('.note--done').onclick = showBtnNote();
 
 function showBtnAlr() {
     document.querySelector('.alarm__edit-btn').onclick = function() {
@@ -288,9 +290,13 @@ function showBtnAlr() {
         if (this.classList.contains('actived')) {
             document.querySelectorAll('.alarm__item-info .btn-group-item')
                 .forEach(ele => ele.style.display = 'inline-block');
+            document.querySelector('.alarm--done').style.display = "inline-block";
+
         } else {
             document.querySelectorAll('.alarm__item-info .btn-group-item')
                 .forEach(ele => ele.style.display = 'none');
+            document.querySelector('.alarm--done').style.display = "none";
+
         }
     }
 };
@@ -301,9 +307,13 @@ function showBtnNote() {
         if (this.classList.contains('actived')) {
             document.querySelectorAll('.note__item .btn-group-item')
                 .forEach(ele => ele.style.display = 'inline-block');
+            document.querySelector('.note--done').style.display = "inline-block";
+
         } else {
             document.querySelectorAll('.note__item .btn-group-item')
                 .forEach(ele => ele.style.display = 'none');
+            document.querySelector('.note--done').style.display = "none";
+
         }
     }
 };
