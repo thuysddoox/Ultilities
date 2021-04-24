@@ -359,6 +359,7 @@ function deleteNote(btn, id) {
     btn.onclick = function() {
         console.log(document.querySelectorAll('.note__item')[id]);
         noteList[id].remove();
+        document.querySelector('.note__menu-count').innerText = document.getElementsByClassName('note__item').length + " ghi chú";
     }
 }
 
