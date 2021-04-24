@@ -364,9 +364,9 @@ function deleteNote(btn, id) {
 
 //Delete alarm
 
-document.querySelectorAll('.alarm__item-info .btn-del').forEach(deleteNote);
+document.querySelectorAll('.alarm__item-info .btn-del').forEach(deleteAlarm);
 
-function deleteNote(btn, id) {
+function deleteAlarm(btn, id) {
     let alarmList = document.querySelectorAll('.alarm__item');
     btn.onclick = function() {
         console.log(document.querySelectorAll('.alarm__item')[id]);
