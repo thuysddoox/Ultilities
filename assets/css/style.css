@@ -1106,7 +1106,7 @@ font-size: 14px!important;
 }
 input[type="text"]:focus,input[type="email"]:focus, input[type="password"]:focus,
 textarea:focus{
-        font-size: inherit;
+        font-size: 14px!important;
         -webkit-text-size-adjust:87.5%;
          text-size-adjust: 87.5%;
         
