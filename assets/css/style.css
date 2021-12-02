@@ -1100,5 +1100,5 @@
 
 input, input[type="text"]:focus, input[type="password"]:focus,
 textarea:focus{
-        font-size: 12px;
+        font-size: 12px!important;
 }
